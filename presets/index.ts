@@ -31,7 +31,6 @@ import Modules from 'vite-plugin-use-modules'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import Layouts from 'vite-plugin-vue-meta-layouts'
 
-import I18N from '@intlify/unplugin-vue-i18n/vite'
 import Legacy from 'vite-plugin-legacy-swc'
 import Vue from '@vitejs/plugin-vue'
 import Jsx from '@vitejs/plugin-vue-jsx'
@@ -152,15 +151,6 @@ export default function () {
           [TDesignResolver({ library: 'vue-next' }), 'tdesign-vue-next']
         ]
       })
-    }),
-    /**
-     * i18n 国际化支持
-     * https://www.npmjs.com/package/@intlify/unplugin-vue-i18n
-     */
-    I18N({
-      runtimeOnly: false,
-      compositionOnly: true,
-      include: ['locales/**']
     }),
     /**
      * jsx 和 tsx 支持

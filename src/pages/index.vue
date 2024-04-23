@@ -1,14 +1,9 @@
 <template>
   <div>
-    <div class="grid grid-cols-3">
-      <a href="https://vitejs.dev" target="_blank">
-        <img :src="safeResolve('/vite.svg')" class="logo" alt="Vite logo">
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img :src="safeResolve('/vue.svg')" class="logo vue" alt="Vue logo">
-      </a>
+    <div class="grid grid-cols-2">
+      <img :src="safeResolve('/vite.svg')" class="logo" alt="Vite logo">
+      <img :src="safeResolve('/vue.svg')" class="logo vue" alt="Vue logo">
     </div>
-    <HelloWorld msg="Tov + Vite + Vue" />
   </div>
 </template>
 

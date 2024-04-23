@@ -60,7 +60,7 @@
         "resizable": true,
         "center": true,
         "minWidth": 600,
-        "minHeight": 500,
+        "minHeight": 600,
         "title": "tauri-template",
         "width": 800
       }
