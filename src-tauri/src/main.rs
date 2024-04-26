@@ -5,12 +5,12 @@ use tauri::{generate_handler, Builder, command, generate_context};
 
 fn main(){
 
-
     Builder::default()
-        .plugin(tauri_plugin_sql::Builder::default().build())
+        .plugin(tauri_plugin_sql::Builder::default().build()) // sql 插件
         .invoke_handler(generate_handler![greet])
         .run(generate_context!())
         .expect("error while running tauri application");
+
 }
 
 // 入参为字符串，返回值为字符串

@@ -5,7 +5,7 @@ import { SwitchIcon } from 'vue-dark-switch'
 <template>
   <nav
     aria-label="Site Nav"
-    class="mx-auto h-80px max-w-3xl items-center justify-between p-4"
+    class="mx-auto w-full items-center justify-between p-3"
   >
     <div class="w-full flex items-center justify-center space-x-5">
       <SwitchIcon unmount-persets />

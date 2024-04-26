@@ -7,12 +7,17 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "tauri-template",
+    "productName": "shinyTodo",
     "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "dialog": {
+        "message": true
+      },
+      "notification": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
@@ -61,7 +66,7 @@
         "center": true,
         "minWidth": 600,
         "minHeight": 600,
-        "title": "tauri-template",
+        "title": "shinyTodo",
         "width": 800
       }
     ]
